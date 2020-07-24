@@ -1,0 +1,13 @@
+#!/bin/sh
+
+if [ -z $DOMAIN ] && [ -z $TOKEN ]
+then
+    echo >&2 "Both DOMAIN and TOKEN environment variables must be provided."
+    exit 1
+else
+    while true
+    do
+        echo url="https://www.duckdns.org/update?domains=$DOMAIN&token=$TOKEN&ip=" | curl -s -K -
+        sleep $INTERVAL
+    done
+fi
