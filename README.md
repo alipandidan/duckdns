@@ -1,5 +1,5 @@
 # Duck DNS Docker Image
-Duck DNS Docker image
+Multi-arch Duck DNS Docker image, compatible with linux/amd64,linux/arm64,linux/arm/v6 and linux/arm/v7
 
 ## Usage
 
