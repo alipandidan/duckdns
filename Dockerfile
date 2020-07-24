@@ -8,6 +8,6 @@ RUN apk add curl
 
 COPY duckdns /usr/local/bin/duckdns
 
-RUN chmod 700 /usr/local/bin/duckdns
+RUN chmod +x /usr/local/bin/duckdns
 
 ENTRYPOINT ["duckdns"]
